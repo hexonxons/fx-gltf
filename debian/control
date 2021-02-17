@@ -1,0 +1,19 @@
+Source: fx-gltf
+Section: libdevel
+Priority: optional
+Maintainer: Aleksandr Rozhdestvenskii <ASRozhdestvenskiy@sberbank.ru>
+Build-Depends: debhelper (>= 12),
+               cmake,
+               nlohmann-json3-dev
+Standards-Version: 4.4.1
+Homepage: https://github.com/jessey-git/fx-gltf
+Vcs-Git: https://github.com/jessey-git/fx-gltf.git
+Vcs-Browser: https://github.com/jessey-git/fx-gltf
+
+Package: libfx-gltf-dev
+Architecture: any
+Multi-Arch: same
+Depends: ${misc:Depends},
+         ${shlibs:Depends},
+         nlohmann-json3-dev
+Description: A C++14/C++17 header-only library for simple, efficient, and robust serialization/deserialization of glTF 2.0
